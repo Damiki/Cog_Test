@@ -1,0 +1,116 @@
+body{
+    background:#f1f1f1;
+}
+
+  #GS1{
+        margin-left:30%;
+    }
+    
+  #GS2{
+        margin-left:30%;
+    }
+
+    iframe{
+        margin-left:15%;
+    }
+   
+    
+.round{
+    border-radius: 100%;
+}
+.card{
+    background:transparent;
+    border:0;
+}
+
+
+.myDiv {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    
+    font-family: 'Lexend Deca', sans-serif;
+    width:100%;
+}
+
+.myDiv .bg {
+    position:absolute;
+    z-index: -1;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: url(/assests/images/background.jpg) center ;
+    background-size: cover;
+    width:100%;
+    opacity: .76;
+    
+    
+}
+.navbar-dark .navbar-brand{
+  color:yellow;
+    text-shadow: 6px 6px 8px black;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+      color:yellow;
+    text-shadow: 6px 6px 8px black;
+    font-weight:bold;
+}
+
+#heading{
+    color:white;
+    text-shadow: 13px 13px 8px black;
+}
+#main-text{
+    padding-top:10%;
+}
+#tagline{
+    color:white;
+    text-shadow: 10px 10px 8px black;
+
+}
+
+@media(max-width:1000px){
+    #main-text{
+        padding-top:20%;
+    }
+    .display-1{
+        font-size:3.5rem;
+    }
+   
+}
+
+@media(max-width:500px){
+    #GS1{
+        margin-left:15%;
+    }
+    #GS2{
+        margin-left:15%;
+    }
+     iframe{
+        margin-left:10%;
+        width:90%;
+        height:300px;
+        margin-left:5%
+    }
+   
+    
+}
+
+img{
+    max-width:100%;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
