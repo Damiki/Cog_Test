@@ -41,7 +41,8 @@ body{
     right:0;
     top:0;
     bottom:0;
-    background: url(/assests/images/background.jpg) center ;
+    /* background: url(/assests/images/background.jpg) center ; */
+    background: url("https://i.pinimg.com/originals/1b/74/ed/1b74ed53670b66f50f4a0a2d4c59f7f5.gif") center;
     background-size: cover;
     width:100%;
     opacity: .76;
@@ -73,6 +74,12 @@ body{
 
 }
 
+#about, #sponsors, #contact{
+    margin-top:5em;
+}
+.footmarg{
+    margin-top:5em;
+}
 @media(max-width:1000px){
     #main-text{
         padding-top:20%;
