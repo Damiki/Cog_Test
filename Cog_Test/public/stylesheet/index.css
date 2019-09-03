@@ -114,3 +114,37 @@ input[type=text], select, textarea {
   margin-bottom: 16px; 
   resize: vertical 
 }
+
+.social-icons {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 3;
+    transform: translatex(-10%);
+  }
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 2px;
+  }
+  
+  .social-icons a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    padding: 10px;
+    background: #3B5998;
+    color: white;
+  }
+  
+  .instagram{
+    padding: 10px;
+    background: #3B5998;
+    color: white;
+  }
