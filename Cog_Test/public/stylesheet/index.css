@@ -1,35 +1,36 @@
+*{
+    font-family: 'Arimo', sans-serif;
+}
 body{
     background:#f1f1f1;
 }
 
-  #GS1{
-        margin-left:30%;
-    }
-    
-  #GS2{
-        margin-left:30%;
-    }
-
-    iframe{
-        margin-left:15%;
-    }
    
     
 .round{
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .card{
+    display:block;
+    margin:0 auto;
     background:transparent;
     border:0;
+    width:70%;
+    text-align:center;
+}
+.card-body{
+    text-align: center;
 }
 
 
+#map{
+    display:block;
+    margin:0 auto;
+}
 .myDiv {
     position: relative;
     z-index: 1;
     height: 100vh;
-    
-    font-family: 'Lexend Deca', sans-serif;
     width:100%;
 }
 
@@ -40,7 +41,8 @@ body{
     right:0;
     top:0;
     bottom:0;
-    background: url(/assests/images/background.jpg) center ;
+    /* background: url(/assests/images/background.jpg) center ; */
+    background: url("https://i.pinimg.com/originals/1b/74/ed/1b74ed53670b66f50f4a0a2d4c59f7f5.gif") center;
     background-size: cover;
     width:100%;
     opacity: .76;
@@ -72,6 +74,12 @@ body{
 
 }
 
+#about, #sponsors, #contact{
+    margin-top:5em;
+}
+.footmarg{
+    margin-top:5em;
+}
 @media(max-width:1000px){
     #main-text{
         padding-top:20%;
@@ -83,20 +91,10 @@ body{
 }
 
 @media(max-width:500px){
-    #GS1{
-        margin-left:15%;
-    }
-    #GS2{
-        margin-left:15%;
-    }
      iframe{
-        margin-left:10%;
         width:90%;
         height:300px;
-        margin-left:5%
     }
-   
-    
 }
 
 img{
@@ -148,3 +146,32 @@ input[type=text], select, textarea {
     background: #3B5998;
     color: white;
   }
+  
+.mycontainer{
+    display:block;
+    box-sizing:border-box;
+    width:60vw;
+    margin:0 auto;
+}
+.c-about{
+    font-size: 1.2em;
+    line-height:1.6;
+}
+
+@media screen and (max-width:800px){
+    .mycontainer{
+        width:80vw;
+    }
+    .c-about{
+        line-height:1.4;
+    }
+}
+@media screen and (max-width: 600px){
+    .mycontainer{
+        width:90vw;
+    }
+    .c-about{
+        line-height:1.2;
+    }
+}
+
