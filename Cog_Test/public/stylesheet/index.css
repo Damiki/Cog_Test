@@ -118,40 +118,6 @@ input[type=text], select, textarea {
   resize: vertical 
 }
 
-.social-icons {
-    position: fixed;
-    top: 10%;
-    right: 0;
-    z-index: 3;
-    transform: translatex(-10%);
-  }
-
-  .social-icons a {
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 20px;
-    margin: 2px;
-  }
-  
-  .social-icons a:hover {
-    background-color: #000;
-  }
-  
-  .facebook {
-    padding: 10px;
-    background: #3B5998;
-    color: white;
-  }
-  
-  .instagram{
-    padding: 10px;
-    background: #3B5998;
-    color: white;
-  }
-  
 .mycontainer{
     display:block;
     box-sizing:border-box;
@@ -183,3 +149,43 @@ input[type=text], select, textarea {
     }
 }
 
+
+.social-icons {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 3;
+    transform: translatex(-10%);
+  }
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 2px;
+  }
+  
+  .social-icons a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    padding: 10px;
+    background: #3B5998;
+    color: white;
+  }
+  
+  .instagram{
+    padding: 10px;
+    background: rgb(37, 54, 90);
+    color: white;
+  }
+  
+  .youtube{
+    padding: 10px;
+    background: rgb(202, 35, 35);
+    color: white;
+  }
