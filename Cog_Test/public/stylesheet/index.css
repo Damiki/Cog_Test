@@ -4,6 +4,7 @@
 body{
     background:#f1f1f1;
 }
+a{text-decoration: none;color:#fff;}
 
    
     
@@ -117,7 +118,6 @@ input[type=text], select, textarea {
   margin-bottom: 16px; 
   resize: vertical 
 }
-
 .mycontainer{
     display:block;
     box-sizing:border-box;
@@ -239,6 +239,8 @@ input[type=text], select, textarea {
         grid-column:5 / 6;
         grid-row: 1 / 6;
     }
+    .grid-item{overflow:hidden;
+        transition: 0.5s ease-out;}
     .grid-item-name{
         display:block;
         position:relative;
@@ -252,11 +254,11 @@ input[type=text], select, textarea {
         transition: 0.5s ease-in;
     }
 
-
 .grid-hover-content{
     display:block;
-    position:relative;
-    top:50%;left:50%;
+    position: absolute;;
+    z-index:5;
+    top:20%;left:50%;
     transform: translate(-50%,-50%);
     font-size:1.2em;
     height:0;
@@ -267,16 +269,28 @@ input[type=text], select, textarea {
 }
 
 .grid-button{
+    display: block;
+    width:50%;
+    padding: 0.5rem 1rem;
+    margin:0 auto;
+}
+.button-wrap{
     display:block;
     margin:0 auto;
 }
-.item-4{ background: linear-gradient(rgb(11, 100, 160),rgb(134, 247, 222));}
-.item-5{background: linear-gradient(rgb(35, 144, 199),rgb(117, 150, 212));}
-.item-6{background: linear-gradient(#047eb6,rgb(102, 156, 163));}
+.button-wrap div{
+    display:block;
+    width:50%;
+    float:left;
+}
+.item-4{ background: linear-gradient(rgb(27, 135, 207),rgb(134, 247, 222));}
+.item-5{background: linear-gradient(rgb(35, 144, 199),rgb(117, 169, 212));}
+.item-6{background: linear-gradient(#1c9eda,rgb(92, 182, 194));}
 .item-inner-1{background: linear-gradient(#00A6FB,rgb(142, 219, 230));}
 .item-inner-2{background: linear-gradient(#0582CA,rgb(144, 179, 245));}
-.item-inner-3{background: linear-gradient(#006494,rgb(117, 210, 223));}
+.item-inner-3{background: linear-gradient(rgb(14, 160, 233),rgb(117, 210, 223));}
 .item-inner-4{background: linear-gradient(#0582CA,rgb(117, 210, 223));}
+
 
 #RoboEvents{
     margin-bottom:20vh;
@@ -291,8 +305,8 @@ input[type=text], select, textarea {
     color:#fff;
 }
 .grid-item:hover .grid-item-name{
-    display:none;
-    transition: 0.5s ease-in;
+    top:-100%;
+    transition: 0.25s ease-in;
 }
 @media screen and (max-width:800px){
 .social-icons {
@@ -334,6 +348,10 @@ input[type=text], select, textarea {
     .grid-hover-content{
         box-sizing: border-box;
         padding: 1em;
+        width:100%;
+        font-size:0.75rem;
         top:0%;
     }
+    .button-wrap div{width:100%; margin: 1rem 0;}
+
 }
