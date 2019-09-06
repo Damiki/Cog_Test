@@ -33,6 +33,7 @@ a{text-decoration: none;color:#fff;}
     z-index: 1;
     height: 100vh;
     width:100%;
+    overflow:hidden;
 }
 
 .myDiv .bg {
@@ -152,11 +153,9 @@ input[type=text], select, textarea {
 
 
 .social-icons {
-    position: fixed;
-    top: 15rem;
-    right: 0;
-    z-index: 3;
-    transform: translatex(-10%);
+    position: absolute;
+    left:80%;
+    z-index:3;
   }
 
   .social-icons a {
@@ -308,6 +307,19 @@ input[type=text], select, textarea {
     top:-100%;
     transition: 0.25s ease-in;
 }
+
+.svg-logo{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+}
 @media screen and (max-width:800px){
 .social-icons {
   display:none;
@@ -353,18 +365,4 @@ input[type=text], select, textarea {
         top:0%;
     }
     .button-wrap div{width:100%; margin: 1rem 0;}
-
-}
-
-.svg-logo{
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-#logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-25%, -50%);
 }
