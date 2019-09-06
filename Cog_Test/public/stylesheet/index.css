@@ -153,8 +153,10 @@ input[type=text], select, textarea {
 
 
 .social-icons {
-    position: absolute;
-    left:80%;
+    position: fixed;
+    right:0;
+    top:50%;
+    transform: translate(-25%,-50%);
     z-index:3;
   }
 
