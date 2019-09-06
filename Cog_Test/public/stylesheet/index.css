@@ -153,20 +153,20 @@ input[type=text], select, textarea {
 
 .social-icons {
     position: fixed;
-    top: 10%;
-    right: 0%;
+    top: 15rem;
+    right: 0;
     z-index: 3;
     transform: translatex(-10%);
   }
 
   .social-icons a {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     display: block;
     text-align: center;
     border-radius: 50%;
-    font-size: 20px;
-    margin: 2px;
+    font-size: 1.25rem;
+    margin: 3rem 1rem 0 0;
   }
   
   .social-icons a:hover {
@@ -174,21 +174,21 @@ input[type=text], select, textarea {
   }
   
   .facebook {
-    padding: 10px;
+    padding: 0.65rem 0.5rem 0.5rem 0.45rem;
     background: #3B5998;
-    color: white;
+    color: whitesmoke;
   }
   
-  .instagram{
-    padding: 10px;
+  .college-site{
+    padding: 0.65rem 0.5rem 0.5rem 0.45rem;
     background: rgb(37, 54, 90);
-    color: white;
+    color: whitesmoke;
   }
   
   .youtube{
-    padding: 10px;
-    background: rgb(202, 35, 35);
-    color: white;
+    padding: 0.65rem 0.35rem 0.5rem 0.5rem;
+    background: rgb(194, 29, 29);
+    color: rgb(245, 245, 245);
   }
 
 
@@ -336,4 +336,17 @@ input[type=text], select, textarea {
         padding: 1em;
         top:0%;
     }
+}
+
+.svg-logo{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
 }
